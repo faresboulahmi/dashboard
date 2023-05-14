@@ -949,7 +949,6 @@ color: #ebc999;
     caret-color: var(--first-color);
     color: var(--first-color);
     height: 150px;
-    /* width: 100%; */
 }
 .main-setting .setting textarea::placeholder {
     color: var(--third-color);
@@ -970,7 +969,6 @@ color: #ebc999;
     margin-bottom: 10px;
 }
 @media (max-width:767px) {
-   
     .main-setting .setting .b-title .cont {
         width: calc(100% - 100px);
     }
