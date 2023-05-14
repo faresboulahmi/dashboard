@@ -832,10 +832,16 @@ color: #ebc999;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 10px;
+    width: 100%;
+    /* width: 200px; */
 }
 @media (max-width:992px) {
     .main-setting {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+      
     }
 }
 .main-setting .setting {
@@ -843,9 +849,10 @@ color: #ebc999;
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
+    width: 100%;
 }
 /* start checkbox changing */
- .changer {
+.changer {
     width: 80px;
     height: 30px;
     border-radius: 30px;
@@ -922,7 +929,7 @@ color: #ebc999;
 }
 .changer input:checked ~ .inner {
     background-color: var(--third-color);
-}
+} 
 /* end checkbox changing */
 .main-setting .setting .b-title {
     display: flex;
@@ -930,6 +937,11 @@ color: #ebc999;
     justify-content: space-between;
     align-items: center;
 }
+ @media (max-width:767px) {
+    .main-setting .setting .b-title {
+        /* flex-direction: column; */
+    }
+} 
 .main-setting .setting textarea {
     resize: none;
     outline: none;
@@ -937,6 +949,7 @@ color: #ebc999;
     caret-color: var(--first-color);
     color: var(--first-color);
     height: 150px;
+    /* width: 100%; */
 }
 .main-setting .setting textarea::placeholder {
     color: var(--third-color);
@@ -1124,6 +1137,7 @@ color: #ebc999;
     flex-direction: row;
     gap: 10px;
     padding: 10px;
+    width: 100%;
 }
 .main-setting .setting .three-box .box {
     display: flex;
@@ -1131,11 +1145,16 @@ color: #ebc999;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     margin: 10px;
     padding: 20px;
-    
     position: relative;
+}
+@media (max-width:767px) {
+    .main-setting .setting .three-box .box {
+        width: 50px;
+        font-size: 12px;
+        font-weight: bold;
+    }
 }
 .main-setting .setting .three-box .box .outer {
     border-radius: 10px;
@@ -1288,7 +1307,9 @@ color: #ebc999;
 }
 @media (max-width:992px) {
     .project {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        width:100%;
     }
 }
 .project .project-box {
@@ -1358,6 +1379,11 @@ color: #ebc999;
     height: 10px;
     width: 300px;
     position: relative;
+}
+@media (max-width:767px) {
+    .project .money .span {
+        width: calc(100% - 60px);
+    }
 }
 .project .money .span span {
     height: 10px;
