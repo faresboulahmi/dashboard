@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/framwork.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Setting</title>
+</head>
+<body>
+       <!-- start menu  -->
+       <div class="menu">
+        <aside class="m-b-c">
+            <div class="logo">
+                <i class="fa-solid fa-hat-cowboy-side"></i>F.B</div>
+            <ul>
+                <li>
+                    <a href="index.html" class="aside b-r">
+                            <i class="fa-solid fa-chart-bar"></i><span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html" class="active aside b-r">
+                            <i class="fa-solid fa-gear"></i><span>Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="aside b-r">
+                            <i class="fa-regular fa-user"></i><span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="project.html" class="aside b-r">
+                            <i class="fa-solid fa-diagram-project"></i><span>Project</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="aside b-r">
+                            <i class="fa-solid fa-graduation-cap"></i><span>courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html" class="aside b-r">
+                            <i class="fa-regular fa-circle-user"></i><span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html" class="aside b-r">
+                            <i class="fa-regular fa-file"></i><span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html" class="aside b-r">
+                            <i class="fa-regular fa-credit-card"></i><span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <!-- end menu  -->
+       <!-- start aside content  -->
+       <section class="b-c">
+        <nav class="m-b-c">
+            <div class="input tran s-c b-r tran"><i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Type A Keyword" ></div>
+            <div class="admin"><i class="fa-regular fa-bell"></i>
+            <img src="imgs/avatar.png" alt="" class="b-r-50"></div>
+        </nav>
+        <h1 class=" h"> Settings</h1>
+        <div class="main-setting">
+            <div class="setting b-r m-b-c p-10">
+                <div class="title">
+                    <h2 class="m-c">Site Control</h2>
+                    <p class="s-c">Control The Website If There Is Maintenance</p>
+                </div>
+                <div class="b-title">
+                    <div class="cont">
+                        <p class="m-c ">Website Control</p>
+                    <p class="s-c m-t">Open/Close Website And Type The Reason</p>
+                    </div>
+                    <div class="changer tran">
+                        <input type="checkbox"  checked >
+                        <div class="holder tran"></div>
+                        <div class="inner tran"></div>
+                    </div>
+                </div>
+                <textarea class="b-r p-10" name="" id="" cols="30" rows="10" placeholder="Close Message Content"></textarea>
+        </div>
+        <div class="setting b-r m-b-c p-10">
+            <div class="title">
+                <h2 class="m-c">General Info</h2>
+                <p class="s-c">General Information About Your Account</p>
+            </div>
+            <div class="input">
+                <label for="name" class="s-c">First Name</label><br>
+                <input type="text" id="name" placeholder="First Name" class="m-c b-r">
+            </div>
+            <div class="input">
+                <label for="last" class="s-c">Last Name</label><br>
+                <input type="text" id="last" placeholder="Last Name" class="m-c b-r">
+            </div>
+            <div class="input">
+                <label for="email" class="s-c">Email</label><br>
+                <input type="email" id="email" placeholder="o@nn.sa" disabled class="b-r">
+                <a href="setting.html" class="m-c">Change</a>
+            </div>
+        </div>
+        <div class="setting b-r m-b-c p-10 ">
+            <div class="title">
+                <h2 class="m-c">Security Info</h2>
+                <p class="s-c">Security Information About Your Account</p>
+            </div>
+            <div class="b-title b-b-s p-a">
+                <div class="cont">
+                    <p class="m-c">Password</p>
+                <p class="s-c m-t">Last Change On 25/10/2021</p>
+                </div>
+                <button class="b-r"><a href="setting.html">Change</a></button>
+            </div>
+            <div class="b-title b-b-s p-a">
+                <div class="cont">
+                    <p class="m-c">Two-Factor Authentication</p>
+                <p class="s-c m-t">Enable/Disable The Feature</p>
+                </div>
+                <div class="changer tran " >
+                    <input type="checkbox"  >
+                    <div class="holder tran"></div>
+                    <div class="inner tran"></div>
+
+                </div>
+            </div>
+            <div class="b-title p-a">
+                <div class="cont">
+                    <p class="m-c">Devices</p>
+                <p class="s-c m-t">Check The Login Devices List</p>
+                </div>
+                    <button class="b-r"><a href="setting.html">Devices</a></button>
+            </div>
+        </div>
+        <div class="setting b-r m-b-c p-10">
+            <div class="title">
+                <h2 class="m-c">Social Info</h2>
+                <p class="s-c">Social Media Information</p>
+            </div>
+            <div class="social b-r s-b-c">
+                <i class="fa-brands fa-twitter m-c"></i>
+                <input type="text" placeholder="Twitter Username" class="s-c">
+            </div>
+            <div class="social b-r s-b-c">
+                <i class="fa-brands fa-facebook-f m-c"></i>
+                <input type="text" placeholder="Facebook Username" class="s-c">
+            </div>
+            <div class="social b-r s-b-c">
+                <i class="fa-brands fa-linkedin m-c"></i>
+                <input type="text" placeholder="Linkedin Username" class="s-c">
+            </div>
+            
+            <div class="social b-r s-b-c">
+                <i class="fa-brands fa-youtube m-c"></i>
+                <input type="text" placeholder="Youtube Username" class="s-c">
+            </div>
+        </div>
+        <div class="setting b-r m-b-c p-10">
+            <div class="title">
+                <h2 class="m-c">Widgets Control</h2>
+                <p class="s-c">Show/Hide Widgets</p>
+            </div>
+            <div class="control">
+                <input type="checkbox" id="draft" checked>
+                <label for="draft">Quick Draft</label>
+            </div>
+            <div class="control">
+                <input type="checkbox" id="Target" checked>
+                <label for="Target">Yearly Target</label>
+            </div>
+            <div class="control">
+                <input type="checkbox" id="Statistics" checked>
+                <label for="Statistics">Tickets Statistics</label>
+            </div>
+            <div class="control">
+                <input type="checkbox" id="News" checked>
+                <label for="News">Latest News</label>
+            </div>
+            <div class="control">
+                <input type="checkbox" id="Tasks">
+                <label for="Tasks">Latest Tasks</label>
+            </div>
+            <div class="control">
+                <input type="checkbox" id="Items" checked> 
+                <label for="Items">Top Search Items</label>
+            </div>
+        </div>
+        <div class="setting b-r m-b-c p-10">
+            <div class="title">
+                <h2 class="m-c">Backup Manager</h2>
+                <p class="s-c">Control Backup Time And Location</p>
+            </div>
+            <div class="radio">
+                <input type="radio" id="Daily" name="radio">
+                <label for="Daily">Daily</label>
+            </div>
+            <div class="radio">
+                <input type="radio" id="Weekly" name="radio" >
+                <label for="Weekly">Weekly</label>
+            </div>
+            <div class="radio">
+                <input type="radio" id="Monthly" name="radio" checked>
+                <label for="Monthly">Monthly</label>
+            </div>
+            <div class="three-box p-10 b-t-s">
+                <div class="box">
+                    <input type="checkbox" id="Megaman">
+                    <i class="fa-solid fa-server tran "></i>
+                    <label for="Megaman tran">Megaman</label>
+                    <div class="outer tran"></div>
+                </div>
+                <div class="box">
+                    <input type="checkbox" id="Zero">
+                    <i class="fa-solid fa-server tran"></i>
+                    <label for="Zero tran">Zero</label>
+                    <div class="outer tran"></div>
+                </div>
+                <div class="box">
+                    <input type="checkbox" id="Sigma">
+                    <i class="fa-solid fa-server tran"></i>
+                    <label for="Sigma tran">Sigma</label>
+                    <div class="outer tran"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+       </section>
+       <!-- end aside content  -->
+    
+</body>
+</html>

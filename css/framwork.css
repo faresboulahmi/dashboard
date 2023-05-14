@@ -1,0 +1,110 @@
+/* start framework  */
+:root {
+    --first-color: #4d3227;
+    --second-color: #ebc999;
+    --third-color:#cd7700;
+    --main-transition:0.3s;
+    --second-background:#ececec;
+    --second-effect-color:rgb(0, 123, 255);
+    --effect-second-color:rgb(0, 123, 255 , 60%);
+    --third-effect-color:rgb(241, 37, 37);
+    --effect-third-color:rgb(241, 37, 37 , 60%);
+    --four-effect-color:#216975;
+    --effect-four-color:#216975c5;
+}
+.m-c {
+    color: var(--first-color);
+}
+.s-c {
+    color: var(--third-color);
+}
+.b-c {
+    background-color: var(--second-color);
+}
+.s-b-c {
+    /* background-color: #ececec; */
+    background-color: var(--second-background);
+}
+.m-b-c {
+    background-color: white;
+}
+.b-r {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.b-r-50 {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.f-w {
+    font-weight: bold;
+}
+.t-a {
+    text-align: center;
+}
+.i-w {
+    max-width: 100%;
+}
+.tran{
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.m-0 {
+    margin: 0;
+}
+.m-t {
+    margin-top: 10px;
+}
+.p-b-20px {
+    padding-bottom: 20px !important;
+}
+.b-t-s {
+    border-top: 1px solid var(--second-color);
+}
+.b-b-s {
+    border-bottom: 1px solid var(--second-color);
+}
+.b-r-s {
+    border-right: 1px solid var(--second-color);
+}
+.f-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-10 {
+    padding: 10px;
+}
+.p-a {
+    padding: 10px 0;
+}
+.w-40 {
+    width: 30px !important;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid white;
+}
+.w-50 {
+    width: 50px !important;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid white;
+}
+/* end framework  */
