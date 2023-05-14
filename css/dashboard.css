@@ -802,13 +802,16 @@ color: #ebc999;
 .box .project td button.prog {
     background-color: #1877f2;
 }
+.box .project {
+    display: block;
+}
 
 @media (min-width:992px) {
     .box .project table {
         width: 100%;
     }
-    section .box:last-child {
-        width: 200%;
+    section > .content > .box:last-child {
+        width: 200% ;
      }
      .box .project {
         overflow: hidden;
@@ -832,10 +835,16 @@ color: #ebc999;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 10px;
+    width: 100%;
+    /* width: 200px; */
 }
 @media (max-width:992px) {
     .main-setting {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+      
     }
 }
 .main-setting .setting {
@@ -843,9 +852,10 @@ color: #ebc999;
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
+    width: 100%;
 }
 /* start checkbox changing */
- .changer {
+.changer {
     width: 80px;
     height: 30px;
     border-radius: 30px;
@@ -922,7 +932,7 @@ color: #ebc999;
 }
 .changer input:checked ~ .inner {
     background-color: var(--third-color);
-}
+} 
 /* end checkbox changing */
 .main-setting .setting .b-title {
     display: flex;
@@ -955,6 +965,11 @@ color: #ebc999;
     margin-right: 14px;
     width: calc(100% - 80px);
     margin-bottom: 10px;
+}
+@media (max-width:767px) {
+    .main-setting .setting .b-title .cont {
+        width: calc(100% - 100px);
+    }
 }
 .main-setting .setting .b-title button {
     padding: 5px;
@@ -1124,6 +1139,7 @@ color: #ebc999;
     flex-direction: row;
     gap: 10px;
     padding: 10px;
+    width: 100%;
 }
 .main-setting .setting .three-box .box {
     display: flex;
@@ -1131,11 +1147,16 @@ color: #ebc999;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     margin: 10px;
     padding: 20px;
-    
     position: relative;
+}
+@media (max-width:767px) {
+    .main-setting .setting .three-box .box {
+        width: 50px;
+        font-size: 12px;
+        font-weight: bold;
+    }
 }
 .main-setting .setting .three-box .box .outer {
     border-radius: 10px;
@@ -1288,7 +1309,9 @@ color: #ebc999;
 }
 @media (max-width:992px) {
     .project {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        width:100%;
     }
 }
 .project .project-box {
@@ -1358,6 +1381,11 @@ color: #ebc999;
     height: 10px;
     width: 300px;
     position: relative;
+}
+@media (max-width:767px) {
+    .project .money .span {
+        width: calc(100% - 60px);
+    }
 }
 .project .money .span span {
     height: 10px;
@@ -1537,6 +1565,7 @@ color: #ebc999;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin: 10px;
 }
 @media (min-width:767px) {
     .files {
@@ -1612,6 +1641,20 @@ color: #ebc999;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.file .file-box .image img  {
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.file .file-box:hover .image img {
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
 }
 .file .file-box i {
     color: var(--third-color);
