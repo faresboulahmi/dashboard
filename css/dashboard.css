@@ -836,6 +836,7 @@ color: #ebc999;
     gap: 20px;
     padding: 10px;
     width: 100%;
+
     /* width: 200px; */
 }
 @media (max-width:992px) {
@@ -844,6 +845,7 @@ color: #ebc999;
         flex-direction: column;
         gap: 20px;
         padding: 10px;
+        width: calc(100% - 10px );
       
     }
 }
