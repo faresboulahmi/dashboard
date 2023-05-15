@@ -835,15 +835,10 @@ color: #ebc999;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 10px;
-    width: 100%;
 }
 @media (max-width:992px) {
     .main-setting {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 10px;
-        width: 90%;
+        grid-template-columns:  1fr;
       
     }
 }
